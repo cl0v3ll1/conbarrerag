@@ -50,3 +50,12 @@
 #     print("el numero", n2, "es el mayor")
 # else:
 #     print("el numero", n3, "es el mayor")
+
+# # numeros pares
+
+# n1 = int(input("Ingrese un numero"))
+
+# if n1 % 2==0:
+#     print("El numero es par")
+# else:
+#     print("El numero es impar")
