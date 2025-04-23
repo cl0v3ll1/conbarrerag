@@ -15,12 +15,23 @@ for i in range(cantV):
         print(f"Eligiste a {c2}")
         cantvotos2=cantvotos2+1
     else:
-        print("Nulo")
-      
+        while voto != 1 and voto != 2:
+            print("Opción inválida. Ingrese 1 o 2.")
+            print(f"¿Por quién votará?:\n 1.- {c1}, 2.- {c2}")
+            voto = int(input())
 
+            if voto == 1:
+                print(f"Elegiste a {c1}")
+                cantvotos1 += 1
+
+            elif voto == 2:
+                 print(f"Elegiste a {c2}")
+                 cantvotos2 += 1
+            
+     
 if cantvotos1>cantvotos2:
     print("Gano John Pork")
-elif cantvotos1==cantvotos2:
-    print("Empate")
+elif cantvotos1<cantvotos2:
+   print("Gano Quandale Dingle")
 else:
-    print("Gano Quandale Dingle")
+    print("Empate")
